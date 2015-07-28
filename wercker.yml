@@ -1,0 +1,9 @@
+box: node
+build:
+  steps:
+    - wercker/npm-install:
+        options: "validate-dockerfile -g"
+    - script:
+        name: validate dockerfile
+        code: |
+            docklint
