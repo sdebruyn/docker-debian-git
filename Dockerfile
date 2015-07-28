@@ -13,5 +13,5 @@ RUN apt-get -y update && apt-get -y install git
 # slim down image
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/man/?? /usr/share/man/??_*
 
-# echo hugo version
+# run a CMD to show git is installed
 CMD git help
